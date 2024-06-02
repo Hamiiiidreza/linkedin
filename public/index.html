@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Linkedin</title>
+   <link rel="stylesheet" href="./styles/app.css">
+   <link href="/node_modules/flowbite/dist/flowbite.min.css" rel="stylesheet" />
+   <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
+</head>
+
+<body class="bg-neutral-100">
+   <!-- HEADER -->
+   <header
+      class="hidden md:flex align-center justify-between mx-auto my-0 md:w-[100%] fixed top-0 left-0 right-0 px-4 xl:!px-[4.7rem] h-[53px] bg-white z-[105] border-b border-b-gray-200">
+      <div class="flex align-center justify-center pt-2.5 h-max">
+         <div class="my-0">
+            <img class="w-[40px] h-[35px] cursor-pointer object-contain" src="./images/linkedin.png" alt="linkedin">
+         </div>
+         <div class="relative md:!w-full xl:w-[280px] h-[34px] text-slate-400 ml-1 lg:!block md:!hidden">
+            <div class="absolute top-0 left-0 flex items-center justify-center py-2 pr-2 pl-2">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+               </svg>
+            </div>
+            <div class="block w-full pl-2">
+               <input
+                  class="!pl-6 border-none px-10 w-full h-[34px] leading-[34px] rounded-lg text-sm text-slate-700 !bg-slate-200"
+                  type="text" placeholder="Search">
+            </div>
+         </div>
+      </div>
+      <nav class="w-[687px] h-max">
+         <ul class="flex h-[52px]">
+            <li class="menu-item active inline-block w-20 h-[52px] text-zinc-600 group">
+               <div
+                  class="home-badge flex flex-col items-center justify-end text-base text-center min-w-20 h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                     <path
+                        d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                     <path
+                        d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                  </svg>
+                  <span class="text-xs">Home</span>
+               </div>
+            </li>
+            <li class="menu-item inline-block w-20 h-[52px] text-zinc-600 group">
+               <div
+                  class="flex flex-col items-center justify-end text-base text-center min-w-20 h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                     <path
+                        d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
+                  </svg>
+                  <span class="text-xs">My Network</span>
+               </div>
+            </li>
+            <li class="menu-item inline-block w-20 h-[52px] text-zinc-600 group">
+               <div
+                  class="flex flex-col items-center justify-end text-base text-center min-w-20 h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                     <path fill-rule="evenodd"
+                        d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                        clip-rule="evenodd" />
+                     <path
+                        d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
+                  </svg>
+                  <span class="text-xs">Jobs</span>
+               </div>
+            </li>
+            <li class="menu-item inline-block w-20 h-[52px] text-zinc-600 group">
+               <div
+                  class="flex flex-col items-center justify-end text-base text-center min-w-20 h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors ">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                     <path fill-rule="evenodd"
+                        d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                        clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-xs">Messaging</span>
+               </div>
+            </li>
+            <li class="menu-item inline-block w-20 h-[52px] text-zinc-600 group">
+               <div
+                  class="notif-badge flex flex-col items-center justify-end text-base text-center min-w-20 h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                     <path fill-rule="evenodd"
+                        d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                        clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-xs">Notifications</span>
+               </div>
+            </li>
+            <li class="inline-block w-20 h-[52px] text-zinc-600 group">
+               <div
+                  class="right-border flex flex-col items-center justify-end text-base text-center min-w-20 h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors">
+                  <img class="h-6 w-6 rounded-full" src="./images/picture.jpg" alt="profile picture">
+                  <span class="text-xs flex items-center justify-center">Me
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
+                           <path fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                     </span>
+                  </span>
+               </div>
+            </li>
+            <li class="inline-block w-[82px] h-[52px] pl-5 text-zinc-600 group">
+               <div
+                  class="flex flex-col items-center justify-end text-base text-center min-w-[82px] h-full pb-[3px] cursor-pointer group-hover:text-slate-950 transition-colors">
+                  <span>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path
+                           d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875Z" />
+                        <path
+                           d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 0 0 1.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 0 0 1.897 1.384C6.809 12.164 9.315 12.75 12 12.75Z" />
+                        <path
+                           d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 15.914 9.315 16.5 12 16.5Z" />
+                        <path
+                           d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 19.664 9.315 20.25 12 20.25Z" />
+                     </svg>
+                  </span>
+                  <span class="text-xs flex items-center justify-center whitespace-nowrap">For Business
+                     <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3">
+                           <path fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                              clip-rule="evenodd" />
+                        </svg>
+                     </span>
+                  </span>
+               </div>
+            </li>
+            <li class="inline-block w-[100px] h-[52px] pl-5 text-zinc-600 group">
+               <div
+                  class="text-xs text-yellow-700 hover:text-yellow-900 text-center flex items-center justify-center h-full">
+                  <a class="underline block max-w-full my-0 mx-auto overflow-hidden pt-2" href="#">Upgrade to
+                     premium</a>
+               </div>
+            </li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Drawer/Mobile Menu -->
+   <div>
+      <!-- drawer init and show -->
+      <div
+         class="flex md:hidden justify-between flex-row-reverse  p-2 items-baseline w-screen h-[53px] bg-white z-[105] border-b border-b-gray-200">
+         <button class=" font-medium rounded-lg text-sm mr-1" type="button" data-drawer-target="drawer-navigation"
+            data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/menu--v1.png" alt="menu--v1" />
+         </button>
+         <img class="w-[40px] h-[35px] cursor-pointer object-contain" src="./images/linkedin.png" alt="linkedin">
+      </div>
+
+      <!-- drawer component -->
+      <div id="drawer-navigation"
+         class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-64 dark:bg-gray-800"
+         tabindex="-1" aria-labelledby="drawer-navigation-label">
+         <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
+            Menu</h5>
+         <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+         </button>
+         <div class="py-4 overflow-y-auto">
+            <ul class="space-y-2 font-medium">
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                           d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path
+                           d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                     </svg>
+                     <span class="ms-3">Home</span>
+                  </a>
+               </li>
+               <li>
+                  <button type="button"
+                     class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">
+                     <svg
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                           d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
+                     </svg>
+                     <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">My Network</span>
+                  </button>
+               </li>
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                           d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                           clip-rule="evenodd" />
+                        <path
+                           d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Jobs</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                           d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                           clip-rule="evenodd" />
+                     </svg> <span class="flex-1 ms-3 whitespace-nowrap">Messaging</span>
+                     <span
+                        class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                           d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                           clip-rule="evenodd" />
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Notifications</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <img class="h-6 w-6 rounded-full" src="./images/picture.jpg" alt="profile picture">
+                     <span class="flex-1 ms-3 whitespace-nowrap">Me</span>
+                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="m1 1 4 4 4-4" />
+                     </svg>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg
+                        class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                           d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3" />
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#"
+                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                     <svg
+                        class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
+                        <path
+                           d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
+                        <path
+                           d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                     </svg>
+                     <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <!-- Main -->
+   <main class="home md:!pt-[76px]">
+      <div class="custom-container xl:!px-[4.7rem] lg:!px-4 md:!px-6 px-0">
+         <div class="row flex md:!flex-row flex-col items-start justify-between gap-6">
+            <!-- Left aside -->
+            <div class="leftcol w-full md:!w-[60%] xl:!w-[90%] lg:!w[70%]">
+               <!-- Profile card -->
+               <div
+                  class="profile-card flex flex-col items-center justify-center w-full bg-white overflow-hidden rounded-lg">
+                  <div class="background w-full">
+                     <img src="./images/1709293364746.jpg" class="w-full" alt="">
+                  </div>
+                  <div class="profile-info w-full px-6 md:px-4 lg:!px-[32px]">
+                     <div class="flex items-center justify-between py-0">
+                        <img
+                           class="md:!w-40 w-[8rem] h-[8rem] md:!h-40 -mt-[65px] md:!-mt-[100px] rounded-[50%] bg-no-repeat bg-center border-[5px] border-white"
+                           src="./images/picture.jpg" alt="profile">
+                        <div
+                           class="w-12 h-12 flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer rounded-full">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                 d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="relative">
+                        <div>
+                           <h1 class="inline-block text-xl font-semibold cursor-pointer hover:bg-gray-200">HamidReza
+                              Bakhtiar</h1>
+                           <span class="text-sm font-normal">. 1st</span>
+                           <div class="text-gray-700">Frontend Developer</div>
+                        </div>
+                        <div class="absolute hidden md:!flex items-center justify-center -top-px right-4">
+                           <img class="w-8 h-8 bg-center mr-2 cursor-pointer" src="./images/1634973233235.jpg"
+                              alt="compani">
+                           <span class="cursor-pointer hover:text-blue-600 hover:underline">sabzlearn</span>
+                        </div>
+                     </div>
+                     <div class="flex items-center justify-start">
+                        <span class="text-neutral-500 text-sm font-normal mr-2">kashan, Isfahan province, Iran</span>
+                        <span>
+                           <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Contact info</a>
+                        </span>
+                     </div>
+                     <div class="flex items-center mt-2">
+                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">55 connections</a>
+                     </div>
+                     <div class="flex md:!flex-row flex-col items-center mt-2 gap-2">
+                        <div class="md:!w-auto w-full">
+                           <button type="button"
+                              class="w-full text-white bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full md:text-[.7rem] lg:!text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-colors">Open
+                              to</button>
+                        </div>
+                        <div class="md:!w-auto w-full">
+                           <button type="button"
+                              class="w-full py-2.5 px-5 me-2 mb-2 md:text-[.7rem] lg:!text-sm font-medium text-blue-600 focus:outline-none bg-white rounded-full border border-blue-600 hover:border hover:border-blue-800 hover:bg-blue-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 transition-colors">Add
+                              profile section</button>
+                        </div>
+                        <div class="md:!w-auto w-full">
+                           <button type="button"
+                              class="w-full text-gray-900 bg-white border border-gray-900 hover:border hover:border-gray-900 transition-colors focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full md:text-[.7rem] lg:!text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">More</button>
+                        </div>
+                     </div>
+                     <div class="px-0 py-5">
+                        <div class="flex lg:!flex-row flex-col gap-3 justify-center">
+                           <div class="flex justify-between bg-slate-200 rounded-lg !w-full my-0 mx-0 py-2.5 px-3">
+                              <a href="#" class="w-full">
+                                 <h3 class="text-gray-900 font-semibold">Open to work</h3>
+                                 <p class="text-sm">Frontend Developer roles</p>
+                                 <p class="text-blue-600 text-sm font-semibold hover:underline">Show details</p>
+                              </a>
+                              <div
+                                 class="w-9 h-9 flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer rounded-full">
+                                 <svg class="w-5 h-5 flex" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                                 </svg>
+                              </div>
+                           </div>
+                           <div
+                              class="flex justify-between border border-color rounded-lg !w-full my-0 mx-0 py-2.5 px-3">
+                              <a href="#" class="w-full">
+                                 <h3 class="text-gray-900 text-sm"><strong>Share that you’re hiring</strong> and attract
+                                    qualified condidates</h3>
+                                 <p class="text-blue-600 text-sm font-semibold hover:underline">Get started</p>
+                              </a>
+                              <div
+                                 class="w-9 h-9 flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer rounded-full" ">
+                                 <svg class=" w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- About -->
+               <div
+                  class="flex flex-col items-center justify-start w-full mt-[10px] py-4 px-4 bg-white overflow-hidden rounded-lg space-y-3">
+                  <div class="flex items-center justify-start w-full pt-2 pr-5 pl-5 m-0">
+                     <h2 class="text-left font-semibold text-xl">About</h2>
+                  </div>
+                  <div class="flex flex-col items-start justify-start w-full pl-5 pr-5 text-sm">
+                     <p>Hi Buddy ❤</p>
+                     <p>I'm a Front-end developer with +2 years of experience developing various web apps using React.js
+                     </p>
+                     <p>Also, I am interested in hard challenges and I like to prove myself in all situations 😉</p>
+                  </div>
+                  <div class="flex w-[95%]">
+                     <div class="flex items-center justify-between w-full p-2.5 sm:pt-4 pb-4 pl-6 pr-6 border rounded-lg">
+                        <div class="flex items-center justify-center">
+                           <div class="flex items-start justify-start h-[44px] pr-2 text-gray-700">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                              </svg>
+                           </div>
+                           <div class="flex items-center justify-center">
+                              <div class="flex flex-col items-start justify-center">
+                                 <div class="font-semibold">
+                                    <span>Top skills</span>
+                                 </div>
+                                 <div class="text-sm">
+                                    <span>
+                                       Next.js • React.js • TypeScript • Tailwind CSS • Redux.js
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div
+                           class="w-8 h-8 flex items-center justify-center hover:bg-gray-200 rounded-full transition-colors cursor-pointer">
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                              class="w-5 h-5">
+                              <path fill-rule="evenodd"
+                                 d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
+                                 clip-rule="evenodd" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Right aside -->
+            <div class="rightcol w-full md:!w-[40%] xl:!w-[30%] lg:!w[30%]">
+               <div class="rounded-lg overflow-hidden">
+                  <img class="bg-cover bg-center bg-no-repeat w-full h-full" src="./images/rightpic.png" alt="">
+               </div>
+               <div class="rounded-lg overflow-hidden bg-white mt-2">
+                  <div class="px-4 pt-4">
+                     <h2 class="font-semibold">Other similar profiles</h2>
+                  </div>
+                  <div>
+                     <ul class="flex flex-col w-full divide-y">
+                        <li>
+                           <div class="flex items-start justify-left gap-3 px-6 py-4">
+                              <div class="overflow-hidden min-w-[48px]">
+                                 <img class="h-12 w-12 rounded-full bg-cover object-center object-cover"
+                                    src="./images/profile.png.jpg" alt="suggestion">
+                              </div>
+                              <div class="flex flex-col items-center justify-center gap-2">
+                                 <div class="flex flex-col items-start justify-center">
+                                    <div class="flex items-center justify-start">
+                                       <div>
+                                          <span class="font-semibold">Qadir Yolmeh</span>
+                                       </div>
+                                       <span class="text-sm text-gray-500"> . 2nd</span>
+                                    </div>
+                                    <div>
+                                       <span class="text-sm">Founder of the sabzlearn Educational platform</span>
+                                    </div>
+                                 </div>
+                                 <div class="flex items-center justify-start w-full">
+                                    <button type="button"
+                                       class="text-gray-900 bg-white border border-gray-900 hover:border hover:border-gray-900 transition-colors focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">View
+                                       profile</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="flex items-start justify-left gap-3 px-6 py-4">
+                              <div class="overflow-hidden min-w-[48px]">
+                                 <img class="h-12 w-12 rounded-full bg-cover object-center object-cover"
+                                    src="./images/profile.png.jpg" alt="suggestion">
+                              </div>
+                              <div class="flex flex-col items-center justify-center gap-2">
+                                 <div class="flex flex-col items-start justify-center">
+                                    <div class="flex items-center justify-start">
+                                       <div>
+                                          <span class="font-semibold">Erfan Reshadi</span>
+                                       </div>
+                                       <span class="text-sm text-gray-500"> . 2nd</span>
+                                    </div>
+                                    <div>
+                                       <span class="text-sm">Fullstack developer</span>
+                                    </div>
+                                 </div>
+                                 <div class="flex items-center justify-start w-full">
+                                    <button type="button"
+                                       class="flex items-center justify-center gap-1 text-gray-900 bg-white border border-gray-900 hover:border hover:border-gray-900 transition-colors focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                          class="w-5 h-5">
+                                          <path fill-rule="evenodd"
+                                             d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+                                             clip-rule="evenodd" />
+                                       </svg>
+                                       Follow</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="flex items-start justify-left gap-3 px-6 py-4">
+                              <div class="overflow-hidden min-w-[48px]">
+                                 <img class="h-12 w-12 rounded-full bg-cover object-center object-cover"
+                                    src="./images/profile.png.jpg" alt="suggestion">
+                              </div>
+                              <div class="flex flex-col items-center justify-center gap-2">
+                                 <div class="flex flex-col items-start justify-center">
+                                    <div class="flex items-end justify-start">
+                                       <div>
+                                          <span class="font-semibold block w-[110px]">Mehdi abdollahzadeh</span>
+                                       </div>
+                                       <span class="text-sm text-gray-500"> . 2nd</span>
+                                    </div>
+                                    <div>
+                                       <span class="text-sm">Junior front-end developer</span>
+                                    </div>
+                                 </div>
+                                 <div class="flex items-center justify-start w-full">
+                                    <button type="button"
+                                       class="flex items-center justify-center gap-1 text-gray-900 bg-white border border-gray-900 hover:border hover:border-gray-900 transition-colors focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                          class="w-5 h-5">
+                                          <path
+                                             d="M5.25 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM2.25 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM18.75 7.5a.75.75 0 0 0-1.5 0v2.25H15a.75.75 0 0 0 0 1.5h2.25v2.25a.75.75 0 0 0 1.5 0v-2.25H21a.75.75 0 0 0 0-1.5h-2.25V7.5Z" />
+                                       </svg>
+                                       Connect</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </main>
+
+   <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+   <script src="/public/js/app.js"></script>
+</body>
+
+</html>
